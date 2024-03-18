@@ -79,6 +79,8 @@
   max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
+  display: flex;
+  text-align: center;
 }
 
 .main-button {
@@ -111,7 +113,6 @@
 
 .background-title {
   margin: 0 auto;
-
   background-color: var(--navy-blue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -341,6 +342,14 @@
 .ul-header {
   display: flex;
   gap: 40px;
+}
+
+.ul-header-mobile {
+  display: block;
+}
+
+.header-address-mobile {
+  display: block;
 }
 
 .border-header {
@@ -888,4 +897,65 @@ input::placeholder {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 320px) {
+  .icons-second-section {
+    display: none;
+  }
+  .third-headline-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+  .third-headline-title {
+    text-align: center;
+  }
+  .people-second-headline {
+    flex-direction: column;
+    gap: 72px;
+  }
+  .photos-portfolio {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+  }
+  .modal {
+    width: 90%;
+  }
+  .logo-web-footer {
+    justify-content: center;
+  }
+  .background-footer {
+    height: 664px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .background-title {
+    background-image: url(../images/bg-people-office.jpg);
+  }
 }

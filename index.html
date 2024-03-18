@@ -60,12 +60,40 @@
           </ul>
         </address>
       </div>
+      <div container >
+        <ul class="ul-header-mobile">
+            <li>
+              <a class="link list-ul studio-underline" href="#">Studio</a>
+            </li>
+            <li>
+              <a class="link list-ul portfolio-underline" href="#">Portfolio</a>
+            </li>
+            <li>
+              <a class="link list-ul contacts-underline" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="header-address-mobile">
+            <li>
+              <a class="link contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link contact" href="tel:11(000)1111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+      </div>
     </header>
     <main>
       <section class="background-title">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="main-button modal-btn" type="button" data-modal-open>
+          <button class="main-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -135,7 +163,8 @@
           <ul class="people-second-headline">
             <li class="img-person-position">
               <img
-                src="images/img21.jpg"
+                srcset="./images/img21.jpg 1x, ./images/img21@2x.jpg 2x"
+                src="./images/img21.jpg"
                 alt="a man with moustache and beard"
                 width="264"
                 height="240"
@@ -180,7 +209,8 @@
             </li>
             <li class="img-person-position">
               <img
-                src="images/img22.jpg"
+                srcset="./images/img22.jpg 1x, ./images/img22@2x.jpg 2x"
+                src="./images/img22.jpg"
                 alt="a man in a blue shirt"
                 width="264"
                 height="240"
@@ -225,7 +255,8 @@
             </li>
             <li class="img-person-position">
               <img
-                src="images/img23.jpg"
+                srcset="./images/img23.jpg 1x, ./images/img23@2x.jpg 2x"
+                src="./images/img23.jpg"
                 alt="a woman in a pink sweater"
                 width="264"
                 height="240"
@@ -270,7 +301,8 @@
             </li>
             <li class="img-person-position">
               <img
-                src="images/img24.jpg"
+                srcset="./images/img24.jpg 1x, ./images/img24@2x.jpg 2x"
+                src="./images/img24.jpg"
                 alt="a man in a grey T-shirt"
                 width="264"
                 height="240"
@@ -325,7 +357,8 @@
                 <div class="portfolio-animation">
                   <img
                     class="img-animation"
-                    src="images/img31.jpg"
+                    srcset="./images/img31.jpg 1x, ./images/img31@2x.jpg 2x"
+                    src="./images/img31.jpg"
                     alt="Screenshots of the banking aplication"
                     width="360"
                     height="300"
@@ -347,7 +380,8 @@
               <div class="portfolio-animation">
                 <a href="#" class="link portfolio-link">
                   <img
-                    src="images/img32.jpg"
+                    srcset="./images/img32.jpg 1x, ./images/img32@2x.jpg 2x"
+                    src="./images/img32.jpg"
                     alt="payment via phone application"
                     width="360"
                     height="300"
@@ -369,7 +403,8 @@
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
                   <img
-                    src="images/img33.jpg"
+                    srcset="./images/img33.jpg 1x, ./images/img33@2x.jpg 2x"
+                    src="./images/img33.jpg"
                     alt="Laptop and mobile phone present meditation app"
                     width="360"
                     height="300"
@@ -390,7 +425,8 @@
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
                   <img
-                    src="images/img34.jpg"
+                    srcset="./images/img34.jpg 1x, ./images/img34@2x.jpg 2x"
+                    src="./images/img34.jpg"
                     alt="interior of the car"
                     width="360"
                     height="300"
@@ -412,7 +448,8 @@
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
                   <img
-                    src="images/img35.jpg"
+                    srcset="./images/img35.jpg 1x, ./images/img35@2x.jpg 2x"
+                    src="./images/img35.jpg"
                     alt="Mobile phone presents various wallpapers"
                     width="360"
                     height="300"
@@ -433,7 +470,8 @@
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
                   <img
-                    src="images/img36.jpg"
+                    srcset="./images/img36.jpg 1x, ./images/img36@2x.jpg 2x"
+                    src="./images/img36.jpg"
                     alt="Happy girl"
                     width="360"
                     height="300"
@@ -522,7 +560,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="modal-svg" width="8" height="8">
