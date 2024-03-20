@@ -938,11 +938,24 @@ input::placeholder {
   .background-footer {
     height: 664px;
   }
+
+  .ul-header,
+  .header-address {
+    display: none;
+  }
+
+  .studio-underline::after {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .hamburger .line {
+    display: none;
   }
 }
 
@@ -958,4 +971,39 @@ input::placeholder {
   .background-title {
     background-image: url(../images/bg-people-office.jpg);
   }
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger .line {
+  width: 22px;
+  height: 3px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.menu.mobile {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu.mobile .row {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25%;
+}
+
+.menu.mobile.is-open {
+  display: block;
 }
