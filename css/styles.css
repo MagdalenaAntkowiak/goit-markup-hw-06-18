@@ -197,7 +197,8 @@
 .social-media-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 16px;
 }
 
 .svg-icons {
@@ -345,11 +346,24 @@
 }
 
 .ul-header-mobile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding-top: 72px;
+  padding-left: 16px;
+  padding-bottom: 168px;
 }
 
 .header-address-mobile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.header-address {
+  display: flex;
+  gap: 24px;
 }
 
 .border-header {
@@ -358,9 +372,6 @@
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.all-header {
-  display: flex;
-}
 ul {
   list-style: none;
   margin: 0;
@@ -368,16 +379,13 @@ ul {
 }
 
 address {
+  display: flex;
   font-style: normal;
-  padding: 24px 0;
-  display: flex;
-  margin-left: 332px;
-}
-
-.header-address {
-  display: flex;
-
-  gap: 40px;
+  padding-left: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
 }
 
 .third-headline-list {
@@ -909,10 +917,11 @@ input::placeholder {
   flex-direction: column;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .icons-second-section {
     display: none;
   }
+
   .third-headline-list {
     flex-direction: column;
     gap: 72px;
@@ -947,15 +956,63 @@ input::placeholder {
   .studio-underline::after {
     display: none;
   }
+
+  .close-btn {
+    background-color: transparent;
+  }
+
+  .ul-header-mobile {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+  }
+
+  .list-ul {
+    padding: 0;
+    row-gap: 40px;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    border-radius: 4px;
+  }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 
-  .hamburger .line {
+  .icons-second-section {
     display: none;
+  }
+
+  address {
+    font-style: normal;
+    padding: 24px 0;
+    display: flex;
+    margin-left: 332px;
+  }
+
+  .header-address-mobile {
+    display: block;
+  }
+
+  .social-media-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
   }
 }
 
@@ -965,26 +1022,16 @@ input::placeholder {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .all-header {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-resolution: 192dpi) {
   .background-title {
     background-image: url(../images/bg-people-office.jpg);
   }
-}
-
-.hamburger {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.hamburger .line {
-  width: 22px;
-  height: 3px;
-  background-color: black;
-  border-radius: 4px;
 }
 
 .menu.mobile {
