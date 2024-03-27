@@ -50,21 +50,21 @@
   margin-right: auto;
 }
 
+.list-ul {
+  color: var(--navy-blue);
+  padding: 24px 0;
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contact {
   color: var(--slate);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
   position: relative;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-ul {
-  color: var(--navy-blue);
-  padding: 24px 0;
-  display: inline-block;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -256,10 +256,8 @@
 }
 
 .all-footer {
-  display: flex;
-  justify-content: center;
-  display: inline-block;
   margin-bottom: 16px;
+  display: flex;
   color: var(--cloud);
   font-family: Raleway;
   font-size: 18px;
@@ -364,6 +362,7 @@
 .header-address {
   display: flex;
   gap: 24px;
+  text-decoration: none;
 }
 
 .border-header {
@@ -383,14 +382,13 @@ address {
   font-style: normal;
   padding-left: 16px;
   font-weight: 500;
-  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 2%;
 }
 
 .third-headline-list {
   display: flex;
-
+  padding-bottom: 96px;
   gap: 24px;
 }
 
@@ -583,11 +581,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer {
-  display: flex;
-  align-items: baseline;
-}
-
 .logo-paragraph {
   margin-right: 120px;
 }
@@ -709,10 +702,6 @@ img {
 label {
   display: flex;
   flex-direction: column;
-}
-
-.subscribe-footer {
-  margin-left: 80px;
 }
 
 .text-subscribe {
@@ -905,6 +894,7 @@ input::placeholder {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 .container {
@@ -917,9 +907,31 @@ input::placeholder {
   flex-direction: column;
 }
 
+/*MOBILE*/
 @media screen and (max-width: 767px) {
   .icons-second-section {
     display: none;
+  }
+
+  .section {
+    padding: 96px 0px 96px 0px;
+  }
+
+  .header-address,
+  .ul-header {
+    display: none;
+  }
+
+  .label-email {
+    padding-bottom: 16px;
+  }
+
+  .sm-icons {
+    padding-bottom: 76px;
+  }
+
+  .logo-paragraph {
+    margin-bottom: 76px;
   }
 
   .third-headline-list {
@@ -939,18 +951,9 @@ input::placeholder {
     justify-content: center;
   }
   .modal {
-    width: 90%;
-  }
-  .logo-web-footer {
-    justify-content: center;
-  }
-  .background-footer {
-    height: 664px;
-  }
-
-  .ul-header,
-  .header-address {
-    display: none;
+    width: 288px;
+    min-height: 623px;
+    top: 36%;
   }
 
   .studio-underline::after {
@@ -987,11 +990,25 @@ input::placeholder {
     background-color: black;
     border-radius: 4px;
   }
+
+  .background-footer {
+    background: var(--navy-blue);
+    height: 664px;
+    min-width: 320px;
+    padding: 96px 0 96px;
+  }
 }
 
+/* TABLET */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .contact {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--slate);
   }
 
   .icons-second-section {
@@ -1000,9 +1017,12 @@ input::placeholder {
 
   address {
     font-style: normal;
-    padding: 24px 0;
-    display: flex;
-    margin-left: 332px;
+  }
+
+  .header-address {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
   }
 
   .header-address-mobile {
@@ -1014,9 +1034,37 @@ input::placeholder {
     gap: 24px;
     justify-content: center;
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    top: 45%;
+  }
+
+  .all-header {
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1158px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    top: 43%;
+  }
+
+  .section {
+    padding: 120px 0px 120px 0px;
+  }
+
+  .subscribe-footer {
+    margin-left: 80px;
+  }
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -1026,11 +1074,35 @@ input::placeholder {
     display: flex;
     flex-direction: row;
   }
+
+  .header-address {
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 24px;
+  }
+
+  .contact {
+    font-size: 16px;
+  }
+
+  .icons-second-section {
+    background-color: var(--cloud);
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
 
 @media (min-resolution: 192dpi) {
   .background-title {
-    background-image: url(../images/bg-people-office.jpg);
+    background-image: url(../images/bg-people-office@2x.jpg);
   }
 }
 
