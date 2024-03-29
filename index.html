@@ -33,12 +33,6 @@
         <nav class="nav-header">
           <a class="logo" href="#"><span class="logo-web">WEB</span>STUDIO</a>
 
-          <div class="hamburger" id="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-
           <ul class="ul-header">
             <li>
               <a class="link list-ul studio-underline" href="#">Studio</a>
@@ -51,6 +45,11 @@
             </li>
           </ul>
         </nav>
+        <button class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
         <address>
           <ul class="header-address">
             <li>
@@ -67,92 +66,82 @@
         </address>
 
         <div class="menu mobile" id="menu-mobile">
-          <div>
-            <button type="button" class="close-btn">
-              <svg class="modal-svg" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
+          <button type="button" class="close-btn">
+            <svg class="modal-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-          <div>
-            <nav>
-              <ul class="ul-header-mobile">
-                <li>
-                  <a class="link list-ul studio-underline" href="#">Studio</a>
-                </li>
-                <li>
-                  <a class="link list-ul portfolio-underline" href="#"
-                    >Portfolio</a
-                  >
-                </li>
-                <li>
-                  <a class="link list-ul contacts-underline" href="#"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div>
-            <address>
-              <ul class="header-address-mobile">
-                <li>
-                  <a class="link contact" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a class="link contact" href="tel:11(000)1111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
-
-          <div>
-            <ul class="social-media-list sm-mobile">
-              <li class="social-media">
-                <a class="svg-icons" href="#0">
-                  <svg class="svg-color" width="16" height="16">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
+          <nav>
+            <ul class="ul-header-mobile">
+              <li>
+                <a class="link list-ul studio-underline" href="#">Studio</a>
               </li>
-
-              <li class="social-media">
-                <a class="svg-icons" href="#0">
-                  <svg class="svg-color" width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
+              <li>
+                <a class="link list-ul portfolio-underline" href="#"
+                  >Portfolio</a
+                >
               </li>
-
-              <li class="social-media">
-                <a class="svg-icons" href="#0">
-                  <svg class="svg-color" width="16" height="16">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="social-media">
-                <a class="svg-icons" href="#0">
-                  <svg class="svg-color" width="16" height="16">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
+              <li>
+                <a class="link list-ul contacts-underline" href="#">Contacts</a>
               </li>
             </ul>
-          </div>
+          </nav>
+
+          <address>
+            <ul class="header-address-mobile">
+              <li>
+                <a class="link contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link contact" href="tel:11(000)1111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-media-list sm-mobile">
+            <li class="social-media">
+              <a class="svg-icons" href="#0">
+                <svg class="svg-color" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-media">
+              <a class="svg-icons" href="#0">
+                <svg class="svg-color" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-media">
+              <a class="svg-icons" href="#0">
+                <svg class="svg-color" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-media">
+              <a class="svg-icons" href="#0">
+                <svg class="svg-color" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
       <section class="background-title">
-        <div class="container">
+        <div class="container container-header">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button" data-modal-open>
             Order Service
@@ -218,7 +207,7 @@
         </div>
       </section>
 
-      <section class="our-team-background">
+      <section class="our-team-background section">
         <div class="container">
           <h2 class="second-headline-title">Our Team</h2>
           <ul class="people-second-headline">
@@ -603,21 +592,19 @@
         <div class="subscribe-tablet">
           <p class="text-subscribe">Subscribe</p>
           <form class="form-footer">
-            <div class="label-tablet">
-              <label class="label-email">
-                <input
-                  class="input-footer"
-                  name="user-email"
-                  type="email"
-                  placeholder="E-mail"
-              /></label>
-              <button class="button-footer" type="submit">
-                Subscribe
-                <svg class="form-svg-footer" height="24" width="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <label class="label-email">
+              <input
+                class="input-footer"
+                name="user-email"
+                type="email"
+                placeholder="E-mail"
+            /></label>
+            <button class="button-footer" type="submit">
+              Subscribe
+              <svg class="form-svg-footer" height="24" width="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
