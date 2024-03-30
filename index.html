@@ -46,9 +46,9 @@
           </ul>
         </nav>
         <button class="hamburger" id="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+          <svg class="icon-hamburger" width="16.8" height="14.4">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
         </button>
         <address>
           <ul class="header-address">
@@ -212,13 +212,42 @@
           <h2 class="second-headline-title">Our Team</h2>
           <ul class="people-second-headline">
             <li class="img-person-position">
-              <img
-                srcset="./images/img21.jpg 1x, ./images/img21@2x.jpg 2x"
-                src="./images/img21.jpg"
-                alt="a man with moustache and beard"
-                width="264"
-                height="240"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img21-d@1x.jpg 1x,
+                    ./images/img21-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img21-t@1x.jpg 1x,
+                    ./images/img21-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img21-m@1x.jpg 1x,
+                    ./images/img21-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/img21-m@1x.jpg"
+                  alt="a man with moustache and beard"
+                  width="100%"
+                  height="auto"
+                />
+              </picture>
+
               <div class="name-and-position">
                 <h3 class="team-names">Mark Guerrero</h3>
                 <p class="position-in-company">Product Designer</p>
@@ -258,13 +287,42 @@
               </div>
             </li>
             <li class="img-person-position">
-              <img
-                srcset="./images/img22.jpg 1x, ./images/img22@2x.jpg 2x"
-                src="./images/img22.jpg"
-                alt="a man in a blue shirt"
-                width="264"
-                height="240"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img22-d@1x.jpg 1x,
+                    ./images/img22-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img22-t@1x.jpg 1x,
+                    ./images/img22-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img22-m@1x.jpg 1x,
+                    ./images/img22-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/img22-m@1x.jpg"
+                  alt="a man with moustache and beard"
+                  width="100%"
+                  height="auto"
+                />
+              </picture>
+
               <div class="name-and-position">
                 <h3 class="team-names">Tom Ford</h3>
                 <p class="position-in-company">Frontend Developer</p>
@@ -304,13 +362,42 @@
               </div>
             </li>
             <li class="img-person-position">
-              <img
-                srcset="./images/img23.jpg 1x, ./images/img23@2x.jpg 2x"
-                src="./images/img23.jpg"
-                alt="a woman in a pink sweater"
-                width="264"
-                height="240"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img23-d@1x.jpg 1x,
+                    ./images/img23-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img23-t@1x.jpg 1x,
+                    ./images/img23-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img23-m@1x.jpg 1x,
+                    ./images/img23-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/img23-m@1x.jpg"
+                  alt="a man with moustache and beard"
+                  width="100%"
+                  height="auto"
+                />
+              </picture>
+
               <div class="name-and-position">
                 <h3 class="team-names">Camila Garcia</h3>
                 <p class="position-in-company">Marketing</p>
@@ -350,13 +437,42 @@
               </div>
             </li>
             <li class="img-person-position">
-              <img
-                srcset="./images/img24.jpg 1x, ./images/img24@2x.jpg 2x"
-                src="./images/img24.jpg"
-                alt="a man in a grey T-shirt"
-                width="264"
-                height="240"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/img24-d@1x.jpg 1x,
+                    ./images/img24-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img24-t@1x.jpg 1x,
+                    ./images/img24-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/img24-m@1x.jpg 1x,
+                    ./images/img24-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/img24-m@1x.jpg"
+                  alt="a man with moustache and beard"
+                  width="100%"
+                  height="auto"
+                />
+              </picture>
+
               <div class="name-and-position">
                 <h3 class="team-names">Daniel Wilson</h3>
                 <p class="position-in-company">UI Designer</p>
@@ -405,14 +521,41 @@
             <li class="item">
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
-                  <img
-                    class="img-animation"
-                    srcset="./images/img31.jpg 1x, ./images/img31@2x.jpg 2x"
-                    src="./images/img31.jpg"
-                    alt="Screenshots of the banking aplication"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img31-d@1x.jpg 1x,
+                        ./images/img31-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img31-t@1x.jpg 1x,
+                        ./images/img31-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img31-m@1x.jpg 1x,
+                        ./images/img31-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img31-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -427,15 +570,44 @@
             </li>
 
             <li class="item">
-              <div class="portfolio-animation">
-                <a href="#" class="link portfolio-link">
-                  <img
-                    srcset="./images/img32.jpg 1x, ./images/img32@2x.jpg 2x"
-                    src="./images/img32.jpg"
-                    alt="payment via phone application"
-                    width="360"
-                    height="300"
-                  />
+              <a href="#" class="link portfolio-link"></a>
+                <div class="portfolio-animation">
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img32-d@1x.jpg 1x,
+                        ./images/img32-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img32-t@1x.jpg 1x,
+                        ./images/img32-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img32-m@1x.jpg 1x,
+                        ./images/img32-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img32-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
+
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -452,13 +624,41 @@
             <li class="item">
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
-                  <img
-                    srcset="./images/img33.jpg 1x, ./images/img33@2x.jpg 2x"
-                    src="./images/img33.jpg"
-                    alt="Laptop and mobile phone present meditation app"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img33-d@1x.jpg 1x,
+                        ./images/img33-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img33-t@1x.jpg 1x,
+                        ./images/img33-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img33-m@1x.jpg 1x,
+                        ./images/img33-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img33-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -474,13 +674,41 @@
             <li class="item">
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
-                  <img
-                    srcset="./images/img34.jpg 1x, ./images/img34@2x.jpg 2x"
-                    src="./images/img34.jpg"
-                    alt="interior of the car"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img34-d@1x.jpg 1x,
+                        ./images/img34-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img34-t@1x.jpg 1x,
+                        ./images/img34-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img34-m@1x.jpg 1x,
+                        ./images/img34-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img34-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -497,13 +725,41 @@
             <li class="item">
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
-                  <img
-                    srcset="./images/img35.jpg 1x, ./images/img35@2x.jpg 2x"
-                    src="./images/img35.jpg"
-                    alt="Mobile phone presents various wallpapers"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img35-d@1x.jpg 1x,
+                        ./images/img35-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img35-t@1x.jpg 1x,
+                        ./images/img35-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img35-m@1x.jpg 1x,
+                        ./images/img35-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img35-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -519,13 +775,41 @@
             <li class="item">
               <a href="#" class="link portfolio-link">
                 <div class="portfolio-animation">
-                  <img
-                    srcset="./images/img36.jpg 1x, ./images/img36@2x.jpg 2x"
-                    src="./images/img36.jpg"
-                    alt="Happy girl"
-                    width="360"
-                    height="300"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1158px)"
+                      srcset="
+                        ./images/img36-d@1x.jpg 1x,
+                        ./images/img36-d@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img36-t@1x.jpg 1x,
+                        ./images/img36-t@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/img36-m@1x.jpg 1x,
+                        ./images/img36-m@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <img
+                      src="./images/img36-m@1x.jpg"
+                      alt="a man with moustache and beard"
+                      width="100%"
+                      height="auto"
+                    />
+                  </picture>
                   <p class="animation-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce

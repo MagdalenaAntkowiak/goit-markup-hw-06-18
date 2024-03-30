@@ -36,7 +36,7 @@
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.54px;
-  margin-right: 76px;
+  margin-right: 120px;
   padding: 24px 0;
 }
 
@@ -72,7 +72,7 @@
 
 .main-title {
   color: var(--white);
-  font-size: 36 px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
@@ -166,8 +166,6 @@
 .our-team-background {
   background-color: var(--cloud);
   padding-bottom: 120px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .team-names {
@@ -702,7 +700,7 @@ label {
   background-color: transparent;
   border: 1px solid white;
   border-radius: 4px;
-  width: 288px;
+  width: 264px;
   height: 40px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -881,10 +879,6 @@ input::placeholder {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
 /*MOBILE*/
@@ -893,8 +887,27 @@ input::placeholder {
     display: none;
   }
 
+  @media (min-resolution: 192dpi) {
+    .background-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-people-office@2x.jpg);
+    }
+  }
+
+  .background-title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-people-office@1x.jpg);
+  }
+
   .all-header {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
   }
 
   img {
@@ -1001,6 +1014,7 @@ input::placeholder {
 
   .container-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -1008,8 +1022,8 @@ input::placeholder {
     padding: 96px 0;
   }
 
-  .background-title {
-    padding: 72px 0;
+  .text-under-third-headline {
+    font-weight: 500;
   }
 }
 
@@ -1017,6 +1031,33 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .background-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-people-office-t@2x.jpg);
+    }
+  }
+
+  .background-title {
+    margin: 0 auto;
+    background-color: var(--navy-blue);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-people-office-t@1x.jpg);
+
+    padding: 72px 0;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
   }
 
   .contact {
@@ -1068,7 +1109,8 @@ input::placeholder {
   }
 
   .all-header {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
   }
 
   .hamburger {
@@ -1078,7 +1120,7 @@ input::placeholder {
   .third-headline-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .item-main-page {
@@ -1087,6 +1129,7 @@ input::placeholder {
 
   .text-under-third-headline {
     width: 100%;
+    font-weight: 500;
   }
 
   .third-headline-title {
@@ -1097,6 +1140,7 @@ input::placeholder {
   .people-second-headline {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 64px 24px;
   }
 
   .img-person-position {
@@ -1111,11 +1155,11 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 93px;
   }
 
   .logo-paragraph {
     margin-bottom: 76px;
+    margin-right: 24px;
   }
 
   .button-footer {
@@ -1147,6 +1191,10 @@ input::placeholder {
   .background-title {
     padding: 112px 0;
   }
+
+  .studio-underline {
+    color: var(--ocean);
+  }
 }
 
 /* DESKTOP */
@@ -1158,7 +1206,23 @@ input::placeholder {
   }
 
   .background-title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-people-office-d@1x.jpg);
+  }
+
+  .text-under-third-headline {
+    font-weight: 400;
+  }
+
+  .background-title {
     padding: 188px 0;
+  }
+
+  .studio-underline {
+    color: var(--ocean);
   }
 
   .section {
@@ -1185,10 +1249,6 @@ input::placeholder {
 
   .sm-icons {
     margin-right: 80px;
-  }
-
-  .text-footer {
-    margin-right: 0;
   }
 
   .photos-portfolio {
@@ -1267,7 +1327,7 @@ input::placeholder {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-people-office@2x.jpg);
+      url(../images/bg-people-office-d@2x.jpg);
   }
 }
 
@@ -1283,6 +1343,7 @@ input::placeholder {
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms;
+  margin-bottom: auto;
 }
 
 .menu.mobile .row {
