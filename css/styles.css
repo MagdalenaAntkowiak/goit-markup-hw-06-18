@@ -337,7 +337,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  margin-bottom: 168px;
 }
 
 .header-address-mobile {
@@ -532,6 +531,7 @@ img {
 
 .icons-footer {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -1025,10 +1025,18 @@ input::placeholder {
   .text-under-third-headline {
     font-weight: 500;
   }
+
+  .nav-header-mobile {
+    margin-bottom: auto;
+  }
+
+  .input-footer {
+    width: 288px;
+  }
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 768px;
   }
@@ -1041,6 +1049,10 @@ input::placeholder {
         ),
         url(../images/bg-people-office-t@2x.jpg);
     }
+  }
+
+  .input.footer {
+    width: 264px;
   }
 
   .background-title {
@@ -1155,6 +1167,7 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 530px;
   }
 
   .logo-paragraph {
@@ -1164,10 +1177,6 @@ input::placeholder {
 
   .button-footer {
     margin-left: 24px;
-  }
-
-  .text-footer {
-    margin-right: 24px;
   }
 
   .subscribe-tablet {
@@ -1203,6 +1212,20 @@ input::placeholder {
     width: 408px;
     min-height: 584px;
     top: 43%;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .background-title {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-people-office-d@2x.jpg);
+    }
+  }
+
+  .all-footer {
+    justify-content: start;
   }
 
   .background-title {
@@ -1291,6 +1314,7 @@ input::placeholder {
   .all-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .header-address {
@@ -1318,16 +1342,24 @@ input::placeholder {
 
   .footer {
     flex-wrap: nowrap;
+    display: flex;
   }
-}
 
-@media (min-resolution: 192dpi) {
-  .background-title {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg-people-office-d@2x.jpg);
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headline-social-media {
+    text-align: start;
+  }
+
+  .text-subscribe {
+    text-align: start;
+  }
+
+  .logo {
+    margin-right: 76px;
   }
 }
 
@@ -1343,7 +1375,6 @@ input::placeholder {
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms;
-  margin-bottom: auto;
 }
 
 .menu.mobile .row {
